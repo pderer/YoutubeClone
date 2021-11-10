@@ -1,0 +1,180 @@
+:root {
+  --header-color: black;
+  --header-font-color: white;
+  --hash-color: blue;
+}
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  background-color: var(--header-color);
+  color: var(--header-font-color);
+  padding: 8px 10px;
+}
+.header .header_title i {
+  color: red;
+}
+.header_icon {
+  position: absolute;
+  right: 10px;
+}
+.video {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.video_container {
+  position: relative;
+  width: 100%;
+  height: 56.25%;
+  padding-top: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info_hash {
+  color: var(--hash-color);
+  padding: 4px 10px;
+  font-size: smaller;
+}
+.info_name {
+  padding: 0px 10px;
+}
+.info_view {
+  padding: 0px 10px;
+  color: #a4a4a4;
+  font-size: smaller;
+}
+.info_like {
+  display: flex;
+  width: 100%;
+  padding: 30px 0px;
+  justify-content: space-around;
+}
+.info_like i {
+  margin: 0 auto;
+}
+.like_like {
+  display: flex;
+  flex-direction: column;
+}
+.like_dislike {
+  display: flex;
+  flex-direction: column;
+}
+.like_plus {
+  display: flex;
+  flex-direction: column;
+}
+.like_report {
+  display: flex;
+  flex-direction: column;
+}
+.like_share {
+  display: flex;
+  flex-direction: column;
+}
+.youtuber img {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+.youtuber {
+  position: relative;
+  border-top: 1px solid rgb(216, 215, 215);
+  border-bottom: 1px solid rgb(216, 215, 215);
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+.youtuber_info {
+  padding-left: 10px;
+}
+.youtuber_sub {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.subbutton {
+  position: absolute;
+  right: 10px;
+  color: red;
+}
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 8px 10px;
+}
+.other img {
+  height: 100px;
+  width: auto;
+}
+.other_video1 {
+  display: flex;
+}
+.other_video2 {
+  display: flex;
+}
+.other_video3 {
+  display: flex;
+}
+.video1_flex {
+  padding-left: 10px;
+}
+.video2_flex {
+  padding-left: 10px;
+}
+.video3_flex {
+  padding-left: 10px;
+}
+.video1_youtuber {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.video2_youtuber {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.video3_youtuber {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.video1_views {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.video2_views {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.video3_views {
+  font-size: smaller;
+  color: #a4a4a4;
+}
+.other i {
+  position: absolute;
+  right: 1px;
+  padding-top: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .real_big_flex {
+    display: flex;
+  }
+  .big_flex1 {
+    flex-grow: 3;
+  }
+  .big_flex2 {
+    flex-grow: 1;
+  }
+}
